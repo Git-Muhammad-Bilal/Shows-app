@@ -1,0 +1,650 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/* .App {
+    width: 70%;
+    border: 1px solid 'red';
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 600px;
+    margin-top: 40px;
+    padding-left: 80px;
+
+} */
+
+.App img{
+    height: 100%;
+}
+
+
+.show-routes-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: auto;
+    height: 100%;
+    width: 85%;
+    margin-top: 40px;
+    padding-left: 80px;
+
+}
+
+/* HEADER STYLINGGG______________________________
+_____________________________ */
+
+header {
+    /* margin-top: 200px; */
+    flex: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 15%;
+    padding-top: 17px;
+    margin-bottom: 34px;
+    
+
+
+
+}
+
+/* SEARCH BAR STYLING_________________----------------
+_______________ */
+.search-bar {
+    flex: 4.5;
+    /* margin-left: 70px; */
+}
+
+.search-input {
+    padding: 16px;
+    border-radius: 20px;
+    border: 0.3px solid;
+    border-color: rgb(207, 207, 207);
+    outline: none;
+    width: 440px;
+
+}
+
+/* FAVESHOW STYLING________________
+______ */
+
+.fav-show {
+     flex: 0.5;
+
+ }
+
+.fav-show h2 {
+    color: rgb(59, 197, 202);
+    background-color: white;
+}
+
+a {
+    border: none;
+}
+
+/* ALL SHOWS ITEMS STYLING______________________________________
+________________________ */
+
+
+.all-shows {
+    height: 90%;
+    margin-top: -25px;
+
+ 
+ } 
+
+.all-shows-cont {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 15px;
+    row-gap: 40px;
+}
+
+.all-shows-card-cont {
+    width: 150px;
+    height: 234px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.15);
+}
+
+.all-shows-card-img-cont {
+    width: 150px;
+    height: 155px;
+
+}
+
+.all-shows-card-img-cont img {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.all-shows-card-info-cont {
+    padding-left: 5px;
+    padding-top: 4px;
+}
+
+.all-shows-card-info-cont p {
+    margin-top: 4px;
+    margin-bottom: 0px;
+    font-family: 'Roboto-Regular, Helvetica Neue, Arial, sans-serif';
+    ;
+    word-wrap: break-word;
+    font-size: 13px;
+
+}
+
+.show-card-title {
+    font-size: 16px; 
+ } 
+
+
+
+/* show brief styling */
+
+.showBrf-n-contrler-container {
+    flex: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.brief-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 20px;
+
+
+}
+
+
+.show-brief-img img {
+    width: 50px;
+    height: 80px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.brief-show-name-cont p {
+    margin-top: 0px;
+    margin-bottom: 6px;
+
+}
+
+.controlers-cont {
+    min-width: 600px;
+    margin-right: 40px;
+}
+
+.controlers-cont button {
+    margin-left: 10px;
+    padding: 14px 3px 14px 3px;
+    border-radius: 20px;
+    border: none;
+    width: 100px;
+    background-color: rgb(59, 197, 202);
+    color: white;
+}
+
+.shows-details-sections {
+    flex: 70%;
+    border: 1px;
+    border-top: 0.3px solid;
+    border-color: rgb(231, 224, 224);
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+/* overview section Styles */
+.overview-container {
+    flex: 80%;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+}
+
+.show-img-title-containr {
+    flex: 10%;
+    height: 305px;
+
+}
+
+.show-img-title-containr p {
+    font-size: 25px;
+    font-weight: 530;
+    margin-bottom: 20px;
+
+
+}
+
+.overview-show-img-container {
+    height: 100%;
+
+
+}
+
+.overview-show-img-container img {
+    height: 100%;
+    border-radius: 7%;
+
+}
+
+
+.show-overview {
+    flex: 50%;
+    /* flex-grow: 100%; */
+    padding-right: 50px;
+    padding-left: 34px;
+
+
+}
+
+.show-overview p {
+    word-break: wrap;
+    margin-top: 80px;
+    font-size: 17px;
+
+}
+
+/* ABOUT CONTAINER________________________________________________________________________________
+_________________________________________________ */
+
+.about-container {
+    flex: 30%;
+    height: auto;
+
+    margin-top: 106px;
+    border: 1px;
+    border-style: ridge;
+    padding-left: 23px;
+    box-shadow: 1px 0px 3px rgba(0, 0, 0, 0.15);
+}
+
+.about-titel p {
+    font-size: 30px;
+    /* margin: 0px; */
+    margin-bottom: 13px;
+}
+
+.about-img-show-name-cont {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+
+}
+
+.about-img {
+    width: 100px;
+    height: 140px;
+}
+
+.about-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+
+}
+
+.about-show-title-cont {
+    margin-left: 17px;
+
+}
+
+.about-show-title-cont p {
+    margin-top: 0px;
+    margin-bottom: 7px;
+    font-size: 17px;
+    color: rgb(59, 197, 202);
+
+}
+
+.abt-show-rating-cont {
+    margin-top: 12px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 10px;
+
+}
+
+.abt-show-rating-cont div span {
+    font-size: 45px;
+    font-family: 'monospace';
+    color: rgb(223, 222, 222);
+}
+
+.about-extra-detail {
+    margin-top: 50px;
+
+}
+
+.about-extra-detail p strong {
+    font-size: 16px;
+
+}
+
+
+
+/* main cast  styling .................................
+________________________________________ */
+
+.overview-main-cast {
+    flex: 20%;
+    width: 100%;
+    margin-top: 90px;
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px 100px 100px;
+    gap: 50px;
+    row-gap: 70px;
+    margin-top: 160px;
+
+}
+
+.main-cast-title {
+    /* margin-top: 300px; */
+    font-size: 45px;
+    display: inline-block;
+    margin-top: 65px;
+    flex-shrink: 0%;
+
+}
+
+
+.overview-cast-img {
+    margin-top: 24px;
+    width: 100px;
+    height: 120px;
+}
+
+.overview-cast-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+
+}
+
+.actor-name p {
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 5px;
+    margin-bottom: 0;
+
+
+}
+
+.character-name p {
+    font-size: 15px;
+    margin-top: 2px;
+}
+
+
+/* CAST CONTROLER STYLING//////////////////////////////////// */
+
+.cast-container {
+    width: 80%;
+    margin-top: -55px;
+}
+
+
+@media (min-width:500px) and (max-width: 1000px) {
+
+    .overview-main-cast {
+        grid-template-columns: 100px 100px;
+    }
+
+    .all-shows-cont {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width:900px) and (max-width: 1200px) {
+
+    .overview-main-cast {
+        grid-template-columns: 100px 100px 100px 100px;
+    }
+
+    .all-shows-cont {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+}
+
+@media (min-width:1300px) and (max-width: 1800px) {
+
+    .overview-main-cast {
+        grid-template-columns: 100px 100px 100px 100px 100px 100px;
+    }
+
+
+}
+
+/* Seasons Styling........................................................................ */
+
+
+.seasons-container {
+    height: 100%;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 75px;
+    gap: 20px;
+    padding-right: 30px;
+    margin-top: 53px;
+
+}
+
+.season-description {
+    min-width: 60%;
+
+}
+
+.sasn-num p {
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.season-description p {
+    font-size: 16px;
+    word-break: break-all;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    margin-top: 8px;
+}
+
+.season-img-cont {
+    min-width: 75px;
+    height: 120px;
+    padding-top: 10px;
+}
+
+.season-img-cont img {
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+}
+
+
+/* show rating styling .................................................... */
+
+.reviews-container {
+    width: 80%;
+    padding-top: 40px;
+}
+
+.reviews-title p {
+    font-size: 22px;
+}
+
+.sumry-title p {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.audience-rt-sumry {
+    margin-top: -20px;
+    padding-right: 110px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+
+}
+
+.audience-rt-sumry div {
+    font-size: 16px;
+}
+
+.ratting-bars-cont {
+    max-width: 700px;
+    flex: 20%;
+    margin-top: -9px;
+
+
+}
+
+.rt-bar {
+    margin-top: 8px;
+    height: 11px;
+    border-radius: 8px;
+    background: rgb(233, 231, 231);
+    display: flex;
+
+}
+
+.rt-bar-yellow {
+    height: 11px;
+    border-radius: 8px;
+    background: #fabb05;
+    /* width: 0%; */
+}
+
+.rt-num p {
+    font-size: 60px;
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+
+/* similar Shows   styles__________________________*/
+
+
+.similer-shows-container {
+    width: 80%;
+    padding-top: 50px;
+}
+
+.s-show-title p {
+    font-size: 25px;
+
+}
+
+.s-show-det-cont {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 30px;
+    margin-bottom: 25px;
+
+}
+
+.similer-show-img-cont {
+    min-width: 85px;
+    height: 115px;
+}
+
+.similer-show-img-cont img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+.similer-show-name p {
+    font-size: 20px;
+    margin: 0;
+}
+
+.sm-show-description p {
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 8px;
+
+}
+
+.sm-show-source {
+
+    font-size: 14px;
+    color: rgb(187, 187, 187);
+}
+
+
+
+/* AUTO COMPLETE SEARCH BAR STYLING____________________________________________
+_____________________ */
+
+.sear-auto-comp-cont {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-align: start;
+    gap: 20px;
+    padding-left: 10px;
+    box-shadow: 5px 6px 10px rgba(0, 0, 0, 0.35);
+    width: 600px;
+    height: 400px;
+    margin-top: 7px;
+    padding-top: 7px;
+    overflow: hidden;
+    overflow-y: auto;
+    background-color: white;
+    position: absolute;
+    
+
+}
+
+.search-show-cont {
+
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    text-align: start;
+    column-gap: 15px;
+    width: 100%;
+    height: 100%;
+
+}
+
+.sear-sh-name-cont p {
+    margin-top: 9px;
+    margin-bottom: 12px;
+    font-size: 16px;
+}
+
+.sear-sh-dat-time-gen-cont span {
+    margin-top: 10px;
+    color: rgb(173, 172, 172);
+    font-size: 14px;
+}
+
+.sear-show-img-cont {
+    margin-top: 4px;
+    width: 60px;
+    height: 85px;
+    /* border: 1px solid; */
+}
+
+.sear-show-img-cont img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}

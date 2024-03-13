@@ -1,0 +1,63 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // let nums = [3, 6, 50, 1000, 30, 100, 20, 110, 0, 140]
+        let nums = [3,50, 6, 30 , 20, 0]
+
+        function findScndMxVal(arr) {
+            // debugger
+            let index = 2;
+            let hgstVal = arr[0];
+            let scndHgstVal =arr[1];
+            let length = arr.length;
+            let hstOfAll;
+
+            for (let i = 0; i <=1  ; i++) {
+                for (let j = i+1; j < arr.length; j++) {
+                    if (arr[i] < arr[j]) {
+                        if (i == 1) {
+                            scndHgstVal = scndHgstVal <= arr[j]? arr[j]:arr[j]
+                            hgstVal =  hgstVal < arr[j] ? arr[j] : hgstVal 
+                        }else{
+                            hstOfAll = arr[j];
+                            if (hgstVal < scndHgstVal) {
+                                
+                                hgstVal =  hgstVal < scndHgstVal ? scndHgstVal : hgstVal;
+                            }else{
+                                
+                            }
+                           scndHgstVal = hgstVal
+                        }
+
+                        // j++
+                        
+                        // hgstVal = arr[j];
+                        // if (i < index) {
+                            //     i++
+                            //     index++
+                            // }
+                            // console.log('hst', hgstVal ,'scndg',scndHgstVal);
+                        } 
+                        
+                }
+
+            }
+
+            console.log('sncnd', scndHgstVal);
+            console.log('hgst', hgstVal);
+            return scndHgstVal, hgstVal
+        }
+
+        console.log(findScndMxVal(nums));
+    </script>
+</body>
+
+</html>
